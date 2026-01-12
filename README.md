@@ -1,5 +1,5 @@
 # [Music Player](https://youtu.be/APjb5Er03UE)
-- Coding Tutorial: [https://youtu.be/APjb5Er03UE)
+- Coding Tutorial: [https://youtu.be/APjb5Er03UE](https://youtu.be/APjb5Er03UE)
 - Demo: https://imkennyyip.github.io/music/
 
 In this tutorial, we go over how to create a music player in javascript html and css. This tutorial will cover how to play audio in javascript, create a slider that moves with the audio, create buttons with icons from fontawesome, switch between songs with next and play, and style the music player.
