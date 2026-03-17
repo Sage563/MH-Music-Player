@@ -1,0 +1,140 @@
+[
+  {
+    "image": "./imgs/album-art1.jpg",
+    "name": "Deck The Halls",
+    "artist": "John Parry",
+    "audio": "./audios/deck-the-halls.mp3"
+  },
+  {
+    "image": "./imgs/album-art2.jpg",
+    "name": "Jingle Bells",
+    "artist": "James Lord Pierpont",
+    "audio": "./audios/jingle-bells.mp3"
+  },
+  {
+    "image": "./imgs/album-art3.jpg",
+    "name": "Joy To The World",
+    "artist": "Isaac Watts",
+    "audio": "./audios/joy-to-the-world.mp3"
+  },
+  {
+    "image": "./imgs/album-art4.png",
+    "name": "Memory Lane",
+    "artist": "Geometry Dash",
+    "audio": "./audios/Memory-Lane.mp3"
+  },
+  {
+    "image": "./imgs/album-art5.webp",
+    "name": "GREFG",
+    "artist": "Kz - Stalemate - MASHUP",
+    "audio": "./audios/grief.mp3"
+  },
+  {
+    "image": "./imgs/album-art6.png",
+    "name": "Tidal Wave",
+    "artist": "Dion Timer - Geometry Dash",
+    "audio": "./audios/tidal-Wave.mp3"
+  },
+  {
+    "image": "./imgs/album-art7.png",
+    "name": "Future Funk",
+    "artist": "Jonathean GD - Geometry Dash",
+    "audio": "./audios/future-funk.mp3"
+  },
+  {
+    "image": "./imgs/album-art8.png",
+    "name": "Defeated Circles",
+    "artist": "Geometry Dash",
+    "audio": "./audios/defeated-circles.mp3"
+  },
+  {
+    "image": "./imgs/album-art9.png",
+    "name": "FlameWall - Geometry Dash",
+    "artist": "Geometry Dash",
+    "audio": "./audios/flamewall.mp3"
+  },
+  {
+    "image": "./imgs/album-art10.png",
+    "name": "The Flawless Wings of Yatagarasu",
+    "artist": "Trusta - Geometry Dash",
+    "audio": "./audios/yatagarsu.mp3"
+  },
+  {
+    "image": "./imgs/album-art11.png",
+    "name": "Acheron",
+    "artist": "Riot - Geometry Dash",
+    "audio": "./audios/acheron.mp3"
+  },
+  {
+    "image": "./imgs/album-art12.png",
+    "name": "FireWork",
+    "artist": "Trick - Geometry Dash",
+    "audio": "./audios/firework.mp3"
+  },
+  {
+    "image": "./imgs/album-art13.png",
+    "name": "TON 618",
+    "artist": "Pooch - Geometry Dash",
+    "audio": "./audios/ton-618.mp3"
+  },
+  {
+    "image": "./imgs/album-art14.png",
+    "name": "Zodiac",
+    "artist": "Bianox- Geometry Dash",
+    "audio": "./audios/zodiac.mp3"
+  },
+  {
+    "image": "./imgs/album-art15.png",
+    "name": "Slaughter House",
+    "artist": "Ice Cave - Geometry Dash",
+    "audio": "./audios/Slaughter-House.mp3"
+  },
+  {
+    "image": "./imgs/album-art16.png",
+    "name": "Kocmoc",
+    "artist": "Team Cherry - Geometry Dash",
+    "audio": "./audios/kocmoc.mp3"
+  },
+  {
+    "image": "./imgs/album-art17.png",
+    "name": "Amethyst",
+    "artist": "WaterFlame - Geometry Dash",
+    "audio": "./audios/Amethyst.mp3"
+  },
+  {
+    "image": "./imgs/album-art18.png",
+    "name": "Thinking Space 2",
+    "artist": "CairoX - Geometry Dash",
+    "audio": "./audios/TS2.mp3"
+  },
+  {
+    "image": "./imgs/album-art19.png",
+    "name": "Orbit",
+    "artist": "MindCap - Geometry Dash",
+    "audio": "./audios/orbit.mp3"
+  },
+  {
+    "image": "./imgs/album-art20.png",
+    "name": "Limbo",
+    "artist": "MindCap - Geometry Dash",
+    "audio": "./audios/limbo.mp3"
+  },
+  {
+    "image": "./imgs/album-art21.png",
+    "name": "NullScapes",
+    "artist": "Its Kiba- Geometry Dash",
+    "audio": "./audios/nullscapes.mp3"
+  },
+  {
+    "image": "./imgs/album-art22.png",
+    "name": "Every End",
+    "artist": "MindCap - Geometry Dash",
+    "audio": "./audios/every-end.mp3"
+  },
+  {
+    "image": "./imgs/album-art23.png",
+    "name": "Not Like Us",
+    "artist": "Kendrick Lamar- Geometry Dash",
+    "audio": "./audios/notlikeus.mp3"
+  }
+]
