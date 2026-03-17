@@ -14,7 +14,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);disp
 .app{display:flex;width:100vw;height:100vh;background:var(--s1);overflow:hidden}
 
 /* SIDEBAR */
-.sidebar{width:340px;flex-shrink:0;display:flex;flex-direction:column;background:var(--s2);border-right:1px solid var(--b)}
+.sidebar{width:340px;flex-shrink:0;display:flex;flex-direction:column;background:var(--s2);border-right:1px solid var(--b);overflow:hidden}
 .side-top{padding:22px 18px 0;flex-shrink:0}
 .app-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut2);margin-bottom:13px}
 
@@ -49,9 +49,11 @@ mark{background:none;color:var(--acc);font-weight:700}
 .sec-btn:hover{color:var(--txt);border-color:var(--mut)}
 
 /* Song list */
-.song-list{flex:1;overflow-y:auto}
-.song-list::-webkit-scrollbar{width:3px}
-.song-list::-webkit-scrollbar-thumb{background:var(--s3);border-radius:3px}
+.song-list{flex:1;overflow-y:scroll;min-height:0}
+.song-list::-webkit-scrollbar{width:6px}
+.song-list::-webkit-scrollbar-track{background:var(--s2)}
+.song-list::-webkit-scrollbar-thumb{background:var(--b);border-radius:3px}
+.song-list::-webkit-scrollbar-thumb:hover{background:var(--mut2)}
 .row{display:flex;align-items:center;gap:10px;padding:9px 16px;cursor:pointer;transition:background .1s;position:relative}
 .row:hover{background:#2e2e2e}
 .row.active{background:rgba(224,48,48,.1)}
@@ -75,9 +77,11 @@ mark{background:none;color:var(--acc);font-weight:700}
 .empty{padding:40px;text-align:center;color:var(--mut2);font-size:14px}
 
 /* Playlists tab */
-.pl-list{flex:1;overflow-y:auto}
-.pl-list::-webkit-scrollbar{width:3px}
-.pl-list::-webkit-scrollbar-thumb{background:var(--s3);border-radius:3px}
+.pl-list{flex:1;overflow-y:scroll;min-height:0}
+.pl-list::-webkit-scrollbar{width:6px}
+.pl-list::-webkit-scrollbar-track{background:var(--s2)}
+.pl-list::-webkit-scrollbar-thumb{background:var(--b);border-radius:3px}
+.pl-list::-webkit-scrollbar-thumb:hover{background:var(--mut2)}
 .pl-row{display:flex;align-items:center;gap:12px;padding:10px 16px;cursor:pointer;transition:background .1s;border-bottom:1px solid var(--b)}
 .pl-row:hover{background:#2e2e2e}
 .pl-row.active-pl{background:rgba(224,48,48,.1)}
@@ -135,6 +139,10 @@ input[type=range]:hover::-webkit-slider-thumb{transform:scale(1.35)}
 .c.lit{color:var(--acc)}
 .vol{display:flex;align-items:center;gap:12px;width:100%}
 .vol i{color:var(--mut);font-size:14px;flex-shrink:0}
+
+/* Views */
+#view-songs{display:flex;flex-direction:column;flex:1;overflow:hidden;min-height:0}
+#view-playlists{display:none;flex-direction:column;flex:1;overflow:hidden;min-height:0}
 </style>
 </head>
 <body>
@@ -167,7 +175,7 @@ input[type=range]:hover::-webkit-slider-thumb{transform:scale(1.35)}
     </div>
 
     <!-- Playlists view -->
-    <div id="view-playlists" style="display:none;flex:1;display:none;flex-direction:column;overflow:hidden">
+    <div id="view-playlists">
       <div class="sec-hdr">
         <span class="sec-label" id="pl-view-label">Your Playlists</span>
         <button class="sec-btn" onclick="openNewPL()"><i class="fa-solid fa-plus"></i> New</button>
@@ -233,8 +241,13 @@ const updProg=()=>{const p=prog.max>0?(prog.value/prog.max)*100:0;prog.style.bac
 const updVol=()=>{vol.style.background=`linear-gradient(to right,#777 ${vol.value}%,#2a2a2a ${vol.value}%)`;};
 
 // ── Load songs ────────────────────────────────────
-fetch('./songs.json').then(r=>r.json()).then(d=>{
-  songs=d; render(); load(0,false);
+const CDN='https://cdn.jsdelivr.net/gh/sage563/MH-Music-Player@main/';
+fetch(CDN+'songs.json').then(r=>r.json()).then(d=>{
+  songs=d.map(s=>({...s,
+    image: s.image ? CDN+s.image.replace(/^\.\//,'') : '',
+    audio: s.audio ? CDN+s.audio.replace(/^\.\//,'') : ''
+  }));
+  render(); load(0,false);
 }).catch(()=>{document.getElementById('list').innerHTML='<div class="empty">Cannot load songs.json</div>';});
 
 // ── Tabs ──────────────────────────────────────────
@@ -243,9 +256,7 @@ function switchTab(t){
   document.getElementById('tab-songs').classList.toggle('on',t==='songs');
   document.getElementById('tab-playlists').classList.toggle('on',t==='playlists');
   document.getElementById('view-songs').style.display=t==='songs'?'flex':'none';
-  document.getElementById('view-songs').style.flexDirection='column';
   document.getElementById('view-playlists').style.display=t==='playlists'?'flex':'none';
-  document.getElementById('view-playlists').style.flexDirection='column';
   document.getElementById('search-wrap').style.display=t==='songs'?'block':'none';
   document.getElementById('pl-view-label').textContent='Your Playlists';
   document.getElementById('ctx-remove').style.display='none';
@@ -276,14 +287,12 @@ function getThumb(name){const s=songs.find(x=>x.name===name);return s?s.image:''
 
 function openPL(name){
   curPL=name;
-  document.getElementById('pl-view-label').textContent=name;
   document.getElementById('ctx-remove').style.display='block';
-  renderPLSongs();
-  document.getElementById('pl-list').style.display='none';
-  // swap to song list view inside playlists tab
   const vs=document.getElementById('view-playlists');
   vs.innerHTML='';
-  const hdr=document.createElement('div');hdr.className='sec-hdr';
+  vs.style.display='flex';
+  vs.style.flexDirection='column';
+  const hdr=document.createElement('div');hdr.className='sec-hdr';hdr.style.flexShrink='0';
   hdr.innerHTML=`<button class="ra" style="margin-right:4px" onclick="backToPLList()"><i class="fa-solid fa-arrow-left"></i></button><span class="sec-label" style="flex:1">${name}</span><span class="sec-count" id="pl-song-count">${pls[name].length} songs</span>`;
   vs.appendChild(hdr);
   const sl=document.createElement('div');sl.className='song-list';sl.id='pl-song-list';
@@ -294,10 +303,11 @@ function openPL(name){
 function backToPLList(){
   curPL=null;
   document.getElementById('ctx-remove').style.display='none';
-  document.getElementById('pl-view-label').textContent='Your Playlists';
   const vs=document.getElementById('view-playlists');
   vs.innerHTML='';
-  const hdr=document.createElement('div');hdr.className='sec-hdr';
+  vs.style.display='flex';
+  vs.style.flexDirection='column';
+  const hdr=document.createElement('div');hdr.className='sec-hdr';hdr.style.flexShrink='0';
   hdr.innerHTML=`<span class="sec-label">Your Playlists</span><button class="sec-btn" onclick="openNewPL()"><i class="fa-solid fa-plus"></i> New</button>`;
   vs.appendChild(hdr);
   const pl=document.createElement('div');pl.className='pl-list';pl.id='pl-list';
