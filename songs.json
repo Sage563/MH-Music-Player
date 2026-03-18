@@ -130,11 +130,5 @@
     "name": "Every End",
     "artist": "MindCap - Geometry Dash",
     "audio": "./audios/every-end.mp3"
-  },
-  {
-    "image": "./imgs/album-art23.png",
-    "name": "Not Like Us",
-    "artist": "Kendrick Lamar- Geometry Dash",
-    "audio": "./audios/notlikeus.mp3"
   }
 ]
