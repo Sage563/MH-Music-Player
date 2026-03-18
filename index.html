@@ -241,7 +241,7 @@ const updProg=()=>{const p=prog.max>0?(prog.value/prog.max)*100:0;prog.style.bac
 const updVol=()=>{vol.style.background=`linear-gradient(to right,#777 ${vol.value}%,#2a2a2a ${vol.value}%)`;};
 
 // ── Load songs ────────────────────────────────────
-const CDN='https://purge.jsdelivr.net/gh/sage563/MH-Music-Player@10277b4/';
+const CDN='https://cdn.jsdelivr.net/gh/sage563/MH-Music-Player@10277b4/';
 fetch(CDN+'songs.json').then(r=>r.json()).then(d=>{
   songs=d.map(s=>({...s,
     image: s.image ? CDN+s.image.replace(/^\.\//,'') : '',
