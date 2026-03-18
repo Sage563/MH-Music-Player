@@ -87,7 +87,7 @@
     "image": "./imgs/album-art15.png",
     "name": "Slaughter House",
     "artist": "Ice Cave - Geometry Dash",
-    "audio": "./audios/Slaughter-House.mp3"
+    "audio": "./audios/sluaghterhouse.mp3"
   },
   {
     "image": "./imgs/album-art16.png",
@@ -130,5 +130,40 @@
     "name": "Every End",
     "artist": "MindCap - Geometry Dash",
     "audio": "./audios/every-end.mp3"
+  },
+  {
+    "image" : "./imgs/album-art23.png",
+    "name" : "Final Message",
+    "artist" : "Forsaken - Roblox",
+    "audio" : "./audios/final-message.mp3"
+  },
+  {
+    "image" : "./imgs/album-art24.png",
+    "name" : "Dead Ringer",
+    "artist" : "Forsaken - Roblox",
+    "audio" : "./audios/dead-ringer.mp3"
+  },
+  {
+    "image" : "./imgs/album-art25.png",
+    "name" : " LIVING LEGEND",
+    "artist" : "Forsaken - Roblox",
+    "audio" : "./audios/living-legend.mp3"
+  },
+  {
+    "image" : "./imgs/album-art26.png",
+    "name" : "Plead",
+    "artist" : "Forsaken - Roblox",
+    "audio" : "./audios/plead.mp3"
+  },
+  {
+    "image" : "./imgs/album-art27.png",
+    "name" : "Close to Me",
+    "artist" : "Forsaken - Roblox",
+    "audio" : "./audios/close-to-me.mp3"
+  },{
+    "image" : "./imgs/album-art28.png",
+    "name" : "My Cool BLUU tune",
+    "artist" : "Forsaken - Roblox",
+    "audio" : "./audios/coolbluetune.mp3"
   }
 ]
