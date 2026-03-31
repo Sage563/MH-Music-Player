@@ -165,5 +165,11 @@
     "name" : "My Cool BLUU tune",
     "artist" : "Forsaken - Roblox",
     "audio" : "./audios/coolbluetune.mp3"
+  },
+  {
+    "image" : "./imgs/album-art29.png",
+    "name" : "Anathema",
+    "artist" : "Anamathema",
+    "audio" : "./audios/anathemea.mp3"
   }
 ]
