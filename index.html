@@ -228,7 +228,6 @@ input[type=range]:hover::-webkit-slider-thumb{transform:scale(1.35)}
 </div>
 
 <script>
-// ── State ─────────────────────────────────────────
 const lj=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d;}catch{return d;}};
 const sj=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));}catch{}};
 let songs=[], cur=0, doShuffle=false, doRepeat=false;
@@ -240,8 +239,7 @@ const fmt=s=>isNaN(s)?'0:00':`${Math.floor(s/60)}:${String(Math.floor(s%60)).pad
 const updProg=()=>{const p=prog.max>0?(prog.value/prog.max)*100:0;prog.style.background=`linear-gradient(to right,#e03030 ${p}%,#2a2a2a ${p}%)`;};
 const updVol=()=>{vol.style.background=`linear-gradient(to right,#777 ${vol.value}%,#2a2a2a ${vol.value}%)`;};
 
-// ── Load songs ────────────────────────────────────
-const CDN='https://cdn.jsdelivr.net/gh/sage563/MH-Music-Player@10277b4/';
+const CDN='https://cdn.jsdelivr.net/gh/sage563/MH-Music-Player@master/';
 fetch(CDN+'songs.json').then(r=>r.json()).then(d=>{
   songs=d.map(s=>({...s,
     image: s.image ? CDN+s.image.replace(/^\.\//,'') : '',
@@ -250,7 +248,7 @@ fetch(CDN+'songs.json').then(r=>r.json()).then(d=>{
   render(); load(0,false);
 }).catch(()=>{document.getElementById('list').innerHTML='<div class="empty">Cannot load songs.json</div>';});
 
-// ── Tabs ──────────────────────────────────────────
+
 function switchTab(t){
   activeTab=t; curPL=null;
   document.getElementById('tab-songs').classList.toggle('on',t==='songs');
@@ -263,7 +261,6 @@ function switchTab(t){
   if(t==='playlists') renderPLList(); else render();
 }
 
-// ── Playlist list view ────────────────────────────
 function renderPLList(){
   const el=document.getElementById('pl-list');
   const keys=Object.keys(pls);
@@ -346,7 +343,6 @@ function deletePL(e,name){
   delete pls[name];sj('mh_pls',pls);renderPLList();
 }
 
-// ── Songs render ──────────────────────────────────
 function render(q=''){
   const ql=q.toLowerCase();
   const list=songs.map((s,i)=>({...s,i})).filter(s=>!q||s.name.toLowerCase().includes(ql)||s.artist.toLowerCase().includes(ql));
