@@ -171,5 +171,23 @@
     "name" : "Anathema",
     "artist" : "Anamathema",
     "audio" : "./audios/anathemea.mp3"
+  },
+  {
+    "image" :"./imgs/album-art30.png",
+    "name" : "HeartBeat - Geometry Dash",
+    "artist" : "Krmal",
+    "audio" : "./audios/hearbeat.mp3"
+  },
+  {
+    "image" : "./imgs/album-art31.png",
+    "name" : "Aeternus",
+    "artist" : "Riot - Geometry Dash",
+    "audio" : "./audios/aeternus.mp3"
+  },
+  {
+    "image" : "./imgs/album-art32.png",
+    "name" : "3 Patches of Violet",
+    "artist" : "Forsaken - Roblox",
+    "audio" : "./audios/3-patches-of-violet.mp3"
   }
 ]
