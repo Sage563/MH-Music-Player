@@ -239,7 +239,7 @@ const fmt=s=>isNaN(s)?'0:00':`${Math.floor(s/60)}:${String(Math.floor(s%60)).pad
 const updProg=()=>{const p=prog.max>0?(prog.value/prog.max)*100:0;prog.style.background=`linear-gradient(to right,#e03030 ${p}%,#2a2a2a ${p}%)`;};
 const updVol=()=>{vol.style.background=`linear-gradient(to right,#777 ${vol.value}%,#2a2a2a ${vol.value}%)`;};
 
-const CDN='https://cdn.jsdelivr.net/gh/sage563/MH-Music-Player@master/';
+const CDN='https://cdn.jsdelivr.net/gh/sage563/MH-Music-Player@30d1bd8/';
 fetch(CDN+'songs.json').then(r=>r.json()).then(d=>{
   songs=d.map(s=>({...s,
     image: s.image ? CDN+s.image.replace(/^\.\//,'') : '',
