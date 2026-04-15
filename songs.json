@@ -33,7 +33,7 @@
     "image": "./imgs/album-art6.png",
     "name": "Tidal Wave",
     "artist": "Dion Timer - Geometry Dash",
-    "audio": "./audios/tidal-Wave.mp3"
+    "audio": "./audios/tidal-wave.mp3"
   },
   {
     "image": "./imgs/album-art7.png",
@@ -80,7 +80,7 @@
   {
     "image": "./imgs/album-art14.png",
     "name": "Zodiac",
-    "artist": "Bianox- Geometry Dash",
+    "artist": "Bianox - Geometry Dash",
     "audio": "./audios/zodiac.mp3"
   },
   {
@@ -99,13 +99,13 @@
     "image": "./imgs/album-art17.png",
     "name": "Amethyst",
     "artist": "WaterFlame - Geometry Dash",
-    "audio": "./audios/Amethyst.mp3"
+    "audio": "./audios/amethyst.mp3"
   },
   {
     "image": "./imgs/album-art18.png",
     "name": "Thinking Space 2",
     "artist": "CairoX - Geometry Dash",
-    "audio": "./audios/TS2.mp3"
+    "audio": "./audios/ts2.mp3"
   },
   {
     "image": "./imgs/album-art19.png",
@@ -122,7 +122,7 @@
   {
     "image": "./imgs/album-art21.png",
     "name": "NullScapes",
-    "artist": "Its Kiba- Geometry Dash",
+    "artist": "Its Kiba - Geometry Dash",
     "audio": "./audios/nullscapes.mp3"
   },
   {
@@ -132,68 +132,69 @@
     "audio": "./audios/every-end.mp3"
   },
   {
-    "image" : "./imgs/album-art23.png",
-    "name" : "Final Message",
-    "artist" : "Forsaken - Roblox",
-    "audio" : "./audios/final-message.mp3"
+    "image": "./imgs/album-art23.png",
+    "name": "Final Message",
+    "artist": "Forsaken - Roblox",
+    "audio": "./audios/final-message.mp3"
   },
   {
-    "image" : "./imgs/album-art24.png",
-    "name" : "Dead Ringer",
-    "artist" : "Forsaken - Roblox",
-    "audio" : "./audios/dead-ringer.mp3"
+    "image": "./imgs/album-art24.png",
+    "name": "Dead Ringer",
+    "artist": "Forsaken - Roblox",
+    "audio": "./audios/dead-ringer.mp3"
   },
   {
-    "image" : "./imgs/album-art25.png",
-    "name" : " LIVING LEGEND",
-    "artist" : "Forsaken - Roblox",
-    "audio" : "./audios/living-legend.mp3"
+    "image": "./imgs/album-art25.png",
+    "name": "LIVING LEGEND",
+    "artist": "Forsaken - Roblox",
+    "audio": "./audios/living-legend.mp3"
   },
   {
-    "image" : "./imgs/album-art26.png",
-    "name" : "Plead",
-    "artist" : "Forsaken - Roblox",
-    "audio" : "./audios/plead.mp3"
+    "image": "./imgs/album-art26.png",
+    "name": "Plead",
+    "artist": "Forsaken - Roblox",
+    "audio": "./audios/plead.mp3"
   },
   {
-    "image" : "./imgs/album-art27.png",
-    "name" : "Close to Me",
-    "artist" : "Forsaken - Roblox",
-    "audio" : "./audios/close-to-me.mp3"
-  },{
-    "image" : "./imgs/album-art28.png",
-    "name" : "My Cool BLUU tune",
-    "artist" : "Forsaken - Roblox",
-    "audio" : "./audios/coolbluetune.mp3"
+    "image": "./imgs/album-art27.png",
+    "name": "Close to Me",
+    "artist": "Forsaken - Roblox",
+    "audio": "./audios/close-to-me.mp3"
   },
   {
-    "image" : "./imgs/album-art29.png",
-    "name" : "Anathema",
-    "artist" : "Anamathema",
-    "audio" : "./audios/anathemea.mp3"
+    "image": "./imgs/album-art28.png",
+    "name": "My Cool BLUU tune",
+    "artist": "Forsaken - Roblox",
+    "audio": "./audios/coolbluetune.mp3"
   },
   {
-    "image" :"./imgs/album-art30.png",
-    "name" : "HeartBeat - Geometry Dash",
-    "artist" : "Krmal",
-    "audio" : "./audios/hearbeat.mp3"
+    "image": "./imgs/album-art29.png",
+    "name": "Anathema",
+    "artist": "Anamathema",
+    "audio": "./audios/anathemea.mp3"
   },
   {
-    "image" : "./imgs/album-art31.png",
-    "name" : "Aeternus",
-    "artist" : "Riot - Geometry Dash",
-    "audio" : "./audios/aeternus.mp3"
+    "image": "./imgs/album-art30.png",
+    "name": "HeartBeat - Geometry Dash",
+    "artist": "Krmal",
+    "audio": "./audios/heartbeat.mp3"
   },
   {
-    "image" : "./imgs/album-art32.png",
-    "name" : "3 Patches of Violet",
-    "artist" : "Forsaken - Roblox",
-    "audio" : "./audios/3-patches-of-violet.mp3"
+    "image": "./imgs/album-art31.png",
+    "name": "Aeternus",
+    "artist": "Riot - Geometry Dash",
+    "audio": "./audios/aeternus.mp3"
   },
   {
-    "image" : "./imgs/album-art33.png",
-    "name" : "Tidal Wave x Trap Queen",
-    "artist" : "Geometry Dash - Mashup",
-    "audio" : "./audios/mashup-ttq.mp3"
+    "image": "./imgs/album-art32.png",
+    "name": "3 Patches of Violet",
+    "artist": "Forsaken - Roblox",
+    "audio": "./audios/3-patches-of-violet.mp3"
+  },
+  {
+    "image": "./imgs/album-art33.png",
+    "name": "Tidal Wave x Trap Queen",
+    "artist": "Geometry Dash - Mashup",
+    "audio": "./audios/mashup-ttq.mp3"
   }
 ]
