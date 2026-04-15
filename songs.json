@@ -189,5 +189,10 @@
     "name" : "3 Patches of Violet",
     "artist" : "Forsaken - Roblox",
     "audio" : "./audios/3-patches-of-violet.mp3"
-  }
+  },
+  {
+    "image" : "./imgs/album-art33.png",
+    "name" : "Tidal Wave x Trap Queen",
+    "artist" : "Geometry Dash - Mashup",
+    "audio" : "./audios/mashup-ttq.mp3"
 ]
