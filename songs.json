@@ -196,5 +196,11 @@
     "name": "Tidal Wave x Trap Queen",
     "artist": "Geometry Dash - Mashup",
     "audio": "./audios/mashup-ttq.mp3"
+  },
+  {
+    "image": "./imgs/album-art34.png",
+    "name": "Formosa",
+    "artist": "Geometry Dash - IIL",
+    "audio": "./audios/formosa.mp3"
   }
 ]
